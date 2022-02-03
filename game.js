@@ -76,7 +76,7 @@ function checkAnswer(currentLevel) {
 }
 
 $(document).keypress(function () {
-	if (!started) {
+	if (started === false) {
 		started = true;
 		level = 0;
 		setTitle('Level ' + level);
